@@ -1,36 +1,55 @@
 # Data Science Internship Task 1: Visualizing Distribution of Ages and Genders
 
-## Objective
-Implement data visualization techniques to analyze the distribution of ages and genders within a population dataset (`adult.csv`). This task serves as an introduction to exploratory data analysis (EDA) and visualization in data science.
+## Overview
 
+This repository contains an analysis of the `adult.csv` dataset, focusing on visualizing the distribution of ages and genders within the population. The goal of this task is to perform exploratory data analysis (EDA) by creating visual representations that help in understanding the demographic composition of the dataset.
 
-### Problem Statement
+## Dataset
 
-1. **Visualizing the Distribution of Genders**:
-   - Create a bar chart to display the count of each gender category (`'gender'` column) in the dataset.
-   - Customize the plot to differentiate genders using a selected color palette (`['cyan', 'purple']`).
+The dataset used for this analysis is `adult.csv`. It contains demographic information about individuals, including their ages and genders.
 
-2. **Visualizing the Distribution of Ages**:
-   - Generate a histogram to illustrate the frequency distribution of ages (`'age'` column) across the population.
-   - Utilize `bins=30` to segment age groups and include a kernel density estimate (`kde=True`) for a smoothed visual representation.
+## Task Description
+
+The primary objectives of this task are:
+
+1. **Visualizing the Distribution of Genders:**
+   - Create a bar chart to display the count of each gender category.
+   - Customize the plot with a selected color palette (`['cyan', 'purple']`).
+
+2. **Visualizing the Distribution of Ages:**
+   - Generate a histogram to illustrate the frequency distribution of ages.
+   - Use `bins=30` to segment age groups and include a kernel density estimate (`kde=True`) for a smoothed visual representation.
 
 ## Steps Implemented
 
-### Data Loading and Exploration
+The analysis is performed using the following steps:
 
-- **Loaded Dataset**: The dataset (`adult.csv`) was loaded using `pandas` (`pd.read_csv('adult.csv')`) to understand its structure and contents.
-- **Exploratory Analysis**: Key features such as age and gender were inspected to grasp the demographic composition of the dataset.
+1. **Loading the Dataset:**
+   - The dataset is loaded into a Pandas DataFrame using `pd.read_csv('adult.csv')`.
 
-### Visualization Techniques
+2. **Exploratory Analysis:**
+   - Basic statistics and information about the dataset are displayed to understand its structure and the key features (age and gender).
 
-1. **Bar Plot for Gender Distribution**
+3. **Data Visualization:**
 
-   Created a bar chart using `seaborn` (`sns.barplot()`) to visualize the count of each gender category. The plot was customized with a chosen color palette (`['cyan', 'purple']`) to distinguish between genders.
+   - **Bar Plot for Gender Distribution:**
+     - Created a bar chart using Seaborn (`sns.barplot()`) to visualize the count of each gender category.
+     - Customized the plot with a color palette (`['cyan', 'purple']`).
 
-2. **Histogram for Age Distribution**
+   - **Histogram for Age Distribution:**
+     - Generated a histogram using Seaborn (`sns.histplot()`) to display the frequency distribution of ages.
+     - Utilized `bins=30` to group ages into 30 bins for clarity and included a kernel density estimate (`kde=True`) for a smoothed representation of the distribution.
 
-   Generated a histogram using `seaborn` (`sns.histplot()`) to display the frequency distribution of ages. `bins=30` were used to group ages into 30 bins for clarity, and a kernel density estimate (`kde=True`) was included for a smoothed representation of the distribution.
+## Results
 
-### Code Details
-- Implemented using Python with libraries such as `matplotlib` and `seaborn` for data visualization.
-- Ensured plots are informative with appropriate titles, axis labels, and plot sizes (`figsize`).
+- **Gender Distribution:**
+  - The bar chart visually differentiates between genders using the selected color palette, showing the count of each gender category.
+
+- **Age Distribution:**
+  - The histogram provides a visual representation of age distribution across the population, with the kernel density estimate showing the smoothed distribution.
+
+## Libraries Used
+
+- Pandas
+- Matplotlib
+- Seaborn
